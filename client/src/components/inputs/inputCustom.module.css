@@ -1,0 +1,14 @@
+.inputCustom {
+    background: white;
+    color:black;
+    border: 1px solid darkgrey;
+    height: 30px;
+    width: 400px;
+    margin-bottom: 24px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.inputCustom:focus {
+    outline: none;
+}

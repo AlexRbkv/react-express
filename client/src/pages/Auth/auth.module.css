@@ -1,0 +1,29 @@
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: beige;
+    width: 800px;
+    height: 500px;
+    border: 1px solid brown;
+}
+
+.authCaption {
+    font-family: Arial;
+    font-size: 32px;
+    color: black;
+    font-weight: bold;
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    margin: 24px auto;
+}
