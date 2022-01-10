@@ -12,8 +12,8 @@ const generateJwt = (id, email, role) => {
 }
 
 class UserController {
-    async registration(req, res, next) {
-        const {email, password, role} = req.body
+    async registration(request, result, next) {
+        const {email, password, role} = request.body
         if (!email || !password) {
             return next(ApiError.badRequest('Некорректный email или password'))
         }
@@ -25,11 +25,11 @@ class UserController {
         const user = await User.create({email, role, password: hashPassword})
         const basket = await Basket.create({userId: user.id})
         const token = generateJwt(user.id, user.email, user.role)
-        return res.json({token})
+        return result.json({token})
     }
 
-    async login(req, res, next) {
-        const {email, password} = req.body
+    async login(request, result, next) {
+        const {email, password} = request.body
         const user = await User.findOne({where: {email}})
         if (!user) {
             return next(ApiError.internal('Пользователь не найден'))
@@ -39,12 +39,12 @@ class UserController {
             return next(ApiError.internal('Указан неверный пароль'))
         }
         const token = generateJwt(user.id, user.email, user.role)
-        return res.json({token})
+        return result.json({token})
     }
 
-    async check(req, res, next) {
-        const token = generateJwt(req.user.id, req.user.email, req.user.role)
-        return res.json({token})
+    async check(request, result, next) {
+        const token = generateJwt(request.user.id, request.user.email, request.user.role)
+        return result.json({token})
     }
 }
 

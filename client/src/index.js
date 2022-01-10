@@ -1,9 +1,9 @@
 import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import {App} from './App';
 import UserStore from './store/UserStore';
 import DeviceStore from './store/DeviceStore';
-import styles from './app.module.css';
 
 export const Context = createContext(null);
 
@@ -13,7 +13,9 @@ ReactDOM.render(
             user: new UserStore(),
             device: new DeviceStore(),
         }}>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </Context.Provider>,
     document.getElementById('root'),
 );

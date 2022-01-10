@@ -1,14 +1,11 @@
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
 import AppRouter from './components/AppRouter';
-import Navbar from './components/navbar/Navbar';
+import {Navbar} from './components/navbar/Navbar';
 
-const App = () => {
-    return (
-        <BrowserRouter>
+export const App = () =>
+        <React.Fragment>
             <Navbar />
-            <AppRouter />
-        </BrowserRouter>
-    );
-};
-
-export default App;
+            <main>
+                <AppRouter />
+            </main>
+        </React.Fragment>
