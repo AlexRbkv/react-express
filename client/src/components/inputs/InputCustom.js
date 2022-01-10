@@ -1,17 +1,15 @@
 import React, {useState} from 'react';
-import styles from './inputCustom.module.css';
+import stylesInput from './inputCustom.module.css';
 
-const InputCustom = ({...children}) => {
+export const InputCustom = ({...children}) => {
 
-    const [inputValue, setInputValue] = useState('');
+    const [, setInputValue] = useState('');
 
-    const handleValueChange = (e) => {
-        setInputValue( e.target.value);
+    const handleValueChange = (event) => {
+        setInputValue( event.target.value);
     }
 
     return (
-        <input {...children} className={styles.inputCustom} onChange={handleValueChange}/>
+        <input {...children} className={stylesInput.inputCustom} onChange={handleValueChange}/>
     );
 };
-
-export default InputCustom;

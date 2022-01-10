@@ -2,15 +2,15 @@ const {Type} = require('../models/models')
 const ApiError = require('../error/ApiError');
 
 class TypeController {
-    async create(req, res) {
-        const {name} = req.body
+    async create(request, result) {
+        const {name} = request.body
         const type = await Type.create({name})
-        return res.json(type)
+        return result.json(type)
     }
 
-    async getAll(req, res) {
+    async getAll(request, result) {
         const types = await Type.findAll()
-        return res.json(types)
+        return result.json(types)
     }
 
 }

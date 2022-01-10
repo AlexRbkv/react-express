@@ -11,11 +11,11 @@ export default class DeviceStore {
             {id: 2, name: 'Samsung'},
         ];
         this._devices = [
-            {id: 1, name: 'Iphone 12 pro', price: 25000,  rating: 5, img: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
-            {id: 3, name: 'Iphone 12 pro', price: 25000,  rating: 5, img: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
-            {id: 4, name: 'Iphone 12 pro', price: 25000,  rating: 5, img: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
-            {id: 5, name: 'Iphone 12 pro', price: 25000,  rating: 5, img: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
-            {id: 6, name: 'Iphone 12 pro', price: 25000,  rating: 5, img: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
+            {id: 1, name: 'Iphone 12 pro', price: 25000,  rating: 5, image: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
+            {id: 3, name: 'Iphone 12 pro', price: 25000,  rating: 5, image: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
+            {id: 4, name: 'Iphone 12 pro', price: 25000,  rating: 5, image: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
+            {id: 5, name: 'Iphone 12 pro', price: 25000,  rating: 5, image: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
+            {id: 6, name: 'Iphone 12 pro', price: 25000,  rating: 5, image: 'https://www.techinn.com/f/13782/137821860/apple-iphone-12-pro-6gb-128gb-6.1.jpg'},
         ];
         makeAutoObservable(this);
     }

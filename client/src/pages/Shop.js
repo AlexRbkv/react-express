@@ -1,7 +1,4 @@
 import React from 'react';
 
-const Shop = () => {
-    return <div>Shop</div>;
-};
+export const Shop = () => <div>Shop</div>
 
-export default Shop;
