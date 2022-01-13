@@ -1,0 +1,14 @@
+.shopContentWrap {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    height: fit-content;
+    column-gap: 3rem;
+}
+
+.shopPanelWrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    width: 100%;
+}

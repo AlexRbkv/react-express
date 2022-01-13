@@ -1,0 +1,82 @@
+.devicePageContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem
+}
+
+.devicePageCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 2rem;
+}
+
+.devicePageMainInfoWrap {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+.devicePageImage {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.devicePageMainInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.devicePageName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.devicePagePrice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.devicePageRatingWrap {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+}
+
+.devicePageRating {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.devicePageRatingStar {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.7rem;
+}
+
+.devicePageCharactersWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.devicePageCharactersCaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.devicePageCharactersList {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.devicePageCharactersList li {
+    margin-bottom: 1rem;
+}

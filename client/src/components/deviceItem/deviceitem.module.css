@@ -1,0 +1,68 @@
+.deviceItemCard {
+    padding: 1.5rem;
+    background: #ffffff;
+    height: auto;
+    border-radius: 2rem;
+    border: 1px solid #ffffff;
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+.deviceItemCard:hover {
+    border: 1px solid #2F4F4F;
+    transition: 0.4s ease;
+    box-shadow: 0px 0px 8px 0px rgba(47, 79, 79, 0.5);
+    box-shadow: #2F4F4F;
+}
+
+.deviceItemDescriptionWrap {
+    text-align: left;
+}
+
+.deviceItemImage {
+    width: 19rem;
+    height: 19rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.deviceDescrRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.deviceItemName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.deviceItemPrice {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.deviceItemRatingWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.deviceItemRating {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.deviceItemRatingStar {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.deviceItemRatingStar:hover {
+    cursor: pointer;
+}
+
