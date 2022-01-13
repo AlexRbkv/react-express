@@ -1,0 +1,28 @@
+.brandBarWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 2rem;
+}
+
+.brandBarItem {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: 1px solid black;
+    background: white;
+    width: auto;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+}
+
+.brandBarItem:hover {
+    cursor: pointer;
+    border-color: blue;
+    transition: 0.4s ease;
+}
+
+[active="true"].brandBarItem {
+    background: blue;
+    color: white;
+    transition: 0.4s ease;
+}
