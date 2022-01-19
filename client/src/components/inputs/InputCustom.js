@@ -9,7 +9,5 @@ export const InputCustom = ({...children}) => {
         setInputValue( event.target.value);
     }
 
-    return (
-        <input {...children} className={stylesInput.inputCustom} onChange={handleValueChange}/>
-    );
+    return  <input {...children} className={stylesInput.inputCustom} onChange={handleValueChange}/>
 };

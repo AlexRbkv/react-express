@@ -9,7 +9,7 @@ export const DeviceItem = ({device}) => {
     const navigate = useNavigate();
     return (
         <div className={stylesDeviceItem.deviceItemCard} onClick={() => navigate(DEVICE_ROUTE + '/' + device.id)}>
-            <img className={stylesDeviceItem.deviceItemImage} src={device.image} alt="device image"/>
+            <img className={stylesDeviceItem.deviceItemImage} src={process.env.REACT_APP_API_URL + device.image} alt="device image"/>
             <div className={stylesDeviceItem.deviceItemDescriptionWrap}>
                 <div className={stylesDeviceItem.deviceDescrRow}>
                     <h1 className={stylesDeviceItem.deviceItemName}>{device.name}</h1>

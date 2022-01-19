@@ -1,9 +1,9 @@
-.inputCustom {
+.inputCustom:not([type="file"]) {
     background: white;
     color:black;
     border: 1px solid darkgrey;
     height: 2rem;
-    width: 25rem;
+    width: 100%;
     margin-bottom: 0.75rem;
     padding: 0.3rem 0.6rem;
     font-size: 1rem;

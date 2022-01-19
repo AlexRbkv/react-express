@@ -1,0 +1,9 @@
+.adminContentWrap {
+    padding: 3rem;
+}
+
+.adminBtnsWrap {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}

@@ -1,0 +1,49 @@
+.modalContainer {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47,79,79,0.7);
+}
+
+[show="true"].modalContainer {
+    display: block;
+}
+
+.modalContentWrap {
+    width: 30rem;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    row-gap: 1.5rem;
+}
+
+.modalCaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+ }
+
+.modalFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modalFeatureRow {
+    display: flex;
+    flex-direction: row;
+}
